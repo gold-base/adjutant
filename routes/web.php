@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/uuid', 'UserController@show');
+
+Route::get('/test', 'Academy@show');
