@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\Academy\tallandar;
+use App\Http\Controllers\Academy\talandar;
 
 /**
    * The Terran Academy, it is here where we will hone our skills
@@ -20,7 +20,7 @@ class Academy extends Controller
      */
     public function show()
     {
-        $tallandar = new tallandar();
-        return $tallandar->show();
+        $talandar = new talandar();
+        return $talandar->show();
     }
 }
