@@ -20,4 +20,4 @@ Route::get('/test', 'Academy@show');
 // Academy - weekly prompts routes
 // -> task: the identifier for which prompt we want to see
 // -> implementer: whose implementation of the desired task we want
-Route::get('academy/{task}/{implementer}', 'Academy@retrieve');
+Route::get('academy/{implementer}/{task}', 'Academy@retrieve');

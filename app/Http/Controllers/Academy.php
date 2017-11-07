@@ -17,10 +17,11 @@ class Academy extends Controller
      * and the desired implementer. If found then implemented script will be
      * executed, else a proper response message will be displayed.
      *
-     * @param  TODO
-     * @return TODO
+     * @param string $implementer desired implementer of given task
+     * @param string $task desired Academy task
+     * @return object proper payload
      */
-    public function retrieve($task, $implementer)
+    public function retrieve($implementer, $task)
     {
         // $talandar = new talandar();
         // return $talandar->show();
