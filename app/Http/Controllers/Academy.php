@@ -13,14 +13,17 @@ use App\Http\Controllers\Academy\talandar;
 class Academy extends Controller
 {
     /**
-     * This should display via url params to display the desired user's script
+     * Universal display function that takes the route input of the desired task
+     * and the desired implementer. If found then implemented script will be
+     * executed, else a proper response message will be displayed.
      *
      * @param  TODO
      * @return TODO
      */
-    public function show()
+    public function retrieve($task, $implementer)
     {
-        $talandar = new talandar();
-        return $talandar->show();
+        // $talandar = new talandar();
+        // return $talandar->show();
+        return "{$task}-{$implementer}";
     }
 }
