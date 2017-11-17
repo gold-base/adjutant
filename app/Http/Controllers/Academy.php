@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Academy\talandar;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 /**
    * The Terran Academy, it is here where we will hone our skills
@@ -17,14 +19,17 @@ class Academy extends Controller
      * and the desired implementer. If found then implemented script will be
      * executed, else a proper response message will be displayed.
      *
+     * Let's play around with Method injection :D
+     *
      * @param string $implementer desired implementer of given task
      * @param string $task desired Academy task
      * @return object proper payload
      */
-    public function retrieve($implementer, $task)
+    public function retrieve(Route $route)
     {
+        dd($route->methods[0] . str_replace($route->action['namespace'], '', $route->action['controller'])); die;
         // $talandar = new talandar();
         // return $talandar->show();
-        return "{$task}-{$implementer}";
+        return "{$route->parameters['task']}-{$route->parameters['task']}";
     }
 }
