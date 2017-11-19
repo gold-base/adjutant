@@ -25,7 +25,8 @@ trait RequestValidation
         // whats needed & possible
         switch (strtolower($derivedRoute)) {
             case 'get\academy@retrieve':
-
+                // do we keep track of the possible combination here? or do we move it to a db?
+                // what if we tagged a sqlite component to it?
                 break;
         }
         return $result;
