@@ -9,7 +9,10 @@ trait RequestValidation
 {
     private static $expected = [
         'get\academy@retrieve' => [
-            'expected'
+            'expected' => ['implementer', 'task'],
+            'implementer' => ['must' => ['tallandar', 'raynor', 'jeremy']],
+            // the tasks has to be from a db connection
+            // maybe we short work on migrations/seeding?
         ],
     ];
 
