@@ -13,4 +13,23 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
     }
+
+    private function users()
+    {
+        $users = [
+            'talandar' => [
+                'email' => '',
+                'password' => 'talandar',
+            ],
+            'raynor' => [
+                'email' => '',
+                'password' => 'raynor',
+            ],
+        ];
+        DB::table('users')->insert([
+            'name' => str_random(10),
+            'email' => str_random(10).'@gmail.com',
+            'password' => bcrypt('secret'),
+        ]);
+    }
 }
