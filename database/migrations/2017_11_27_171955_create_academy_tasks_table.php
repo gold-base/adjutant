@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAcademyUsersTasksTable extends Migration
+class CreateAcademyTasksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,12 @@ class CreateAcademyUsersTasksTable extends Migration
      */
     public function up()
     {
-        Schema::create('academy_users_tasks', function (Blueprint $table) {
+        Schema::create('academy_tasks', function (Blueprint $table) {
           $table->uuid('id');
-          $table->uuid('academy_user_id');
           $table->string('prompt');
           $table->timestamps();
 
           $table->primary('id');
-        });
-        // foreign key must be created as a separate
-        Schema::table('academy_users_tasks', function($table) {
-          $table->foreign('academy_user_id')->references('id')->on('academy_users');
         });
     }
 
@@ -34,6 +29,6 @@ class CreateAcademyUsersTasksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('academy_users_tasks');
+        Schema::dropIfExists('academy_tasks');
     }
 }
