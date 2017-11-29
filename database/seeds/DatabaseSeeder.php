@@ -25,6 +25,10 @@ class DatabaseSeeder extends Seeder
                 'email' => '',
                 'password' => 'raynor',
             ],
+            'jeremy' => [
+                'email' => '',
+                'password' => 'jeremy',
+            ]
         ];
         foreach ($users as $name => $details) {
             DB::table('users')->insert([
