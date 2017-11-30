@@ -16,6 +16,7 @@ class CreateAcademyTasksTable extends Migration
         Schema::create('academy_tasks', function (Blueprint $table) {
           $table->uuid('id');
           $table->string('prompt');
+          $table->DateTime('created_on');
           $table->timestamps();
 
           $table->primary('id');

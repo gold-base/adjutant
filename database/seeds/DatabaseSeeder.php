@@ -38,4 +38,17 @@ class DatabaseSeeder extends Seeder
             ]);
         }
     }
+
+    private function tasks()
+    {
+        $tasks = [
+            '2017-10-28' => "Artanis needs to send important messages secretly to Zeratul, but the Zerg swarm is ever present and picking off their scouts ...\nExecutor, you have been tasked with creating a function/script in PHP to encrypt and decrypt any given sentence(string) for securing communication between them!\nYou have until 11/5/2017 to complete this!\nEn taro adun!",
+        ];
+        foreach ($tasks as $date => $prompt) {
+            DB::table('academy_tasks')->insert([
+                'prompt' => $prompt,
+                'created_on' => $date,
+            ]);
+        }
+    }
 }
