@@ -2,13 +2,12 @@
 
   Academy : training grounds where weekly prompts are proposed and skilled warriors can come test their meddle.
 
-  Engineering Bay :
+  Engineering Bay : Constant improvements to the adjutant's architecture?
 
-  Factory :
+  Factory : Heavy lifting capabilities?
 
-  Barracks :
+  Barracks : Basic capabilities?
 
-  Command Center :
+  Command Center : Queue(since it's laravel) management?
 
-  Starport :
-  
+  Starport : ummmm?
