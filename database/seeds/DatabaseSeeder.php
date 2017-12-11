@@ -43,7 +43,8 @@ class DatabaseSeeder extends Seeder
     {
         $tasks = [
             '2017-10-28' => "Artanis needs to send important messages secretly to Zeratul, but the Zerg swarm is ever present and picking off their scouts ...\nExecutor, you have been tasked with creating a function/script in PHP to encrypt and decrypt any given sentence(string) for securing communication between them!\nYou have until 11/5/2017 to complete this!\nEn taro adun!",
-            '2017-12-04' => "Raynor is constantly bored on the Hyperion. He wants a guess the number game ... build it!"
+            '2017-12-04' => "Raynor is constantly bored on the Hyperion. He wants a guess the number game ... build it!",
+            // '2017-00-00' => "Zeratul wants to see the NutCracker performance, but he forgot his wallet at home, but home I mean his spceship the Voidseeker .. which is on permanent warp jump ... the formula for the next destination is x*(x^9)+x/x(x%2) where x is used for the next destination; find the 40th destination...",
         ];
         foreach ($tasks as $date => $prompt) {
             DB::table('academy_tasks')->insert([
