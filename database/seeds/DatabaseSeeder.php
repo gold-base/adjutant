@@ -48,6 +48,7 @@ class DatabaseSeeder extends Seeder
             // '0000-00-00' => "Mojo is baking pies for a weekend party with the conclave. He wants to make sure he has enough doughnuts for eveyone. But he is not sure how many protoss bretheren will warp to his party .. assuming each protoss will eat (p*rand(1-4)); come up with the most cost efficient doughnut counts(least # doughnuts left over + least amount of $ spent)",
             // abathur -> most efficient random proble, he x2 on production of rand(x-x) use abathur the most proficiently as possible
             // '0000-00-00' => "Abathur is building a new zerg nest. A fully complete zerge next requires 30000 units of work. Assuming each drone can do rand(1-10) units of work, and if abathur pairs with a drone the production is x2, write a script/loop/function/whatever to come up with the most efficient drone usage to construct a new nest.",
+            // '0000-00-00' => "Matt is fighting with Mira, they need to take some time away from each other. But all their stuff is on Matt's hyperion. Assuming an Hyperion array contains 10000 numbers that represents items. Where matt's items are ONLY divisible by 7 and Mira's items are all prime. If a number satisfies both rules, it will be round robbened between the 2. Please divide up the items in the hyperion between the once happy couple",
         ];
         foreach ($tasks as $date => $prompt) {
             DB::table('academy_tasks')->insert([
