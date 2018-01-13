@@ -51,6 +51,7 @@ class DatabaseSeeder extends Seeder
             // '0000-00-00' => "Matt is fighting with Mira, they need to take some time away from each other. But all their stuff is on Matt's hyperion. Assuming an Hyperion array contains 10000 numbers that represents items. Where matt's items are ONLY divisible by 7 and Mira's items are all prime. If a number satisfies both rules, it will be round robbened between the 2. Please divide up the items in the hyperion between the once happy couple",
             // '0000-00-00' => "It's new years and Kerrigan is throwing a party, she wants to send invitation to 300000 zerglings; but the lings are all grouped together anywhere between 5-13, assuming each invitation costs 100 vespean gas, whats the least amount of gas kerrigan can spend to ensure the MOST lings show up to the party?",
             // '0000-00-00' => "write a fork bomb for Zeratul",
+            // '0000-00-00' => "write a tic tac toe game in console",
         ];
         foreach ($tasks as $date => $prompt) {
             DB::table('academy_tasks')->insert([
