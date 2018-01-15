@@ -52,6 +52,7 @@ class DatabaseSeeder extends Seeder
             // '0000-00-00' => "It's new years and Kerrigan is throwing a party, she wants to send invitation to 300000 zerglings; but the lings are all grouped together anywhere between 5-13, assuming each invitation costs 100 vespean gas, whats the least amount of gas kerrigan can spend to ensure the MOST lings show up to the party?",
             // '0000-00-00' => "write a fork bomb for Zeratul",
             // '0000-00-00' => "write a tic tac toe game in console",
+            // '0000-00-00' => "bmi calculator for kerrigan",
         ];
         foreach ($tasks as $date => $prompt) {
             DB::table('academy_tasks')->insert([
