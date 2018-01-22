@@ -53,6 +53,7 @@ class DatabaseSeeder extends Seeder
             // '0000-00-00' => "write a fork bomb for Zeratul",
             // '0000-00-00' => "write a tic tac toe game in console",
             // '0000-00-00' => "bmi calculator for kerrigan",
+            // '0000-00-00' => "Fahrenheit to Celcius conversion function for raynor",
         ];
         foreach ($tasks as $date => $prompt) {
             DB::table('academy_tasks')->insert([
